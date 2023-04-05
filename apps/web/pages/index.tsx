@@ -1,4 +1,5 @@
 import { helloWorld } from "core";
+
 export default function Web() {
   return (
     <div>
