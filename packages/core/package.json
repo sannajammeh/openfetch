@@ -1,0 +1,25 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "dist/index.esm.js",
+  "types": "dist/index.esm.d.ts",
+  "files": [
+    "dist/**",
+    "./package.json"
+  ],
+  "scripts": {
+    "build": "bunchee ./src/index.ts -f esm -o ./dist/index.esm.js",
+    "dev": "bunchee ./src/index.ts -f esm -o ./dist/index.esm.js -w"
+  },
+  "private": false,
+  "keywords": [],
+  "author": "Sanna Jammeh",
+  "license": "ISC",
+  "devDependencies": {
+    "bunchee": "3.0.0-beta.11",
+    "typescript": "^5.0.3",
+    "tsconfig": "workspace:*"
+  }
+}
